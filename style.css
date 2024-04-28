@@ -1,0 +1,338 @@
+:root{
+    --primary-color:#039029;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html{
+    overflow-x: hidden;
+}
+
+body{
+    overflow-x: hidden;
+    background-color: #F5F5DC;
+}
+ 
+/*Header Styling*/
+#top {
+    color: rgb(245, 10, 10);
+    text-align: center;
+    font-size: 46px;
+    font-family: 'Times New Roman', Times, serif;
+}
+ 
+#top1 {
+    text-align: center;
+    color: black;
+    font-size: 21px;
+    font-family: 'Times New Roman', Times, serif;
+}
+ 
+/* Navigation bar styling*/
+/*Navbar image styling*/
+#navbar img {
+    display: block;
+    width: 50px;
+    height: 50px;
+    margin: auto;
+    margin-bottom: 3px;
+}
+ 
+/*Navbar Functionality*/
+#navbar {
+    display: flex;
+    flex-direction: column;
+    background-color: maroon;
+    /* height: 14vh; */
+    width: 100%;
+    font-family: 'Times New Roman', Times, serif;
+    /* margin-top: 10px; */
+    border: 2px solid black;
+    border-radius: 15px;
+}
+ 
+/*Navbar content functionality*/
+#navcontent {
+    display: flex;
+    justify-content: center;
+    
+}
+ 
+/*Navbar content styling*/
+ul li {
+    list-style: none;
+    margin: 15px;
+    border-radius: 20px;
+}
+ 
+ul li a {
+    padding: 1px;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+}
+ 
+ul li a:hover {
+    background-color: red;
+    border-radius: 10px;
+    padding: 3px 8px ;
+    
+}
+
+.fast-food-img{
+    width: 100%;
+    height: 450px;
+    border-radius: 12px;
+}
+ 
+/*Button Styling*/
+.btn {
+    margin-top: 15px;
+    border: 3px solid white;
+    border-radius: 15px;
+   
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 8px 14px;
+    cursor: pointer;
+   
+}
+ 
+.btn:hover {
+    cursor: pointer;
+    background-color:brown;
+}
+ 
+#container3 {
+    display: flex;
+    justify-content: space-evenly;
+}
+ 
+
+ 
+#top3 {
+    text-align: center;
+    color: red;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 18px 0;
+}
+ 
+#container4 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    margin-bottom: 50px;
+    gap: 12px;
+}
+ 
+
+ 
+/*Designing the footer*/
+footer {
+    text-align: center;
+}
+ 
+
+#About {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    padding: 12% 8%;
+    gap: 48px;
+}
+
+.about-body{
+    background-color:bisque;
+    
+}
+
+.About-img img{
+    position: 0 12px;
+    width: 350px;
+    height: 100%;
+   
+}
+
+#About-content h2{
+    text-align:  center;
+    color: black;
+    font-size: 42px;
+}
+
+#About-content p{
+    color: white;
+    text-align: justify;
+    font-size: 20px;
+    margin: 2em 0 3em;
+}
+
+.contact-details{
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+.contact-details h1{
+    margin-bottom: 12px;
+}
+
+.contact-detail{
+    display: flex;
+    flex-direction: column;
+   gap: 6px;
+
+}
+
+.contact-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+
+#container5 {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    
+    gap: 18px;
+   margin-bottom: 100px;
+    
+    background-position: 0%;
+    
+}
+ 
+#row7 {
+    width: 80%;
+    height: 360px;
+    /* background: url(https://t3.ftcdn.net/jpg/01/14/51/60/360_F_114516029_Z2B6FO30AB6ZR3v9WHXjpXmJScaiLtzk.jpg) no-repeat center center/cover; */
+    display: flex; 
+    position: relative;
+    justify-content: center;
+    align-items: center; 
+    border-radius: 15px;
+    position: relative;
+    place-self: center;
+    overflow: hidden;
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+.btn-food{
+    position: absolute;
+    bottom: 0;
+}
+
+.img-food{
+    border: 2px solid black;
+    width: 100%;
+    height: 360px;
+    border-radius: 15px;
+    transition: all .5s;
+}
+
+.img-food:hover{
+transform: scale(1.1);
+
+}
+ 
+
+/* ////////////// */
+@media (max-width: 44em){
+    #container5 {
+        gap: 12px;
+
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    #About{
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 34em){
+    #container5 {
+
+        row-gap: 12px;
+       
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ///////////////// */
+/*Designing of Contact Us*/
+#ContactUs {
+    width: 100vw;
+    height: 100vh;
+    padding: 0 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:bisque;
+    overflow-x: hidden;
+}
+ 
+.form-shape input,
+.form-shape select,
+.form-shape textarea {
+    width: 100%;
+    padding: 5px 12px;
+    border-radius: 4px;
+}
+
+.form-shape{
+    margin-bottom: 12px;
+}
+
+.btn-submit{
+  display: block;
+    color: brown;
+    background-color: rgb(243, 181, 181);
+    padding: 8px 18px;
+    margin-top: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+ 
+/*Changing the color of placeholder*/
+::placeholder {
+    color: gray;
+}
+
+
+/*Making the webpage responsive using media queries*/
+
+
+
+ 
+@media only screen and (min-height:1000px) {
+    #navbar {
+        height: 10vh;
+    }
+ 
+    #container1::before {
+        height: 39vh;
+    }
+ 
+    #container1 {
+        height: 44vh
+    }
+}
+
+footer{
+    margin: 20px 0;
+}
+
+.order-count{
+    padding: 8px 8px;
+    border-radius: 4px;
+    text-align: center;
+}
+
+
+.order-header{
+    margin-top: 16px;
+}
